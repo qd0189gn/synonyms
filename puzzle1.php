@@ -212,7 +212,7 @@ foreach ($wordCharacters as $char) {
         $htmlTableResult .= '</td>';
         
         
-    } else {
+    //} else {
         // else, the tempselected word above has no master word so, a new
         // random tempselectedWord most be chosen.
         
@@ -349,7 +349,7 @@ foreach ($wordCharacters as $char) {
     
     //array_push($usedWords, $masterWord);
     
-} // end of for loop
+//} // end of for loop
 
 $htmlTable .= "</div>";
 $htmlTable .= '</tbody></table><img id="success_photo" class="success" src="pic/thumbs_up.png" alt="Success!" style="display:none"></div>';
