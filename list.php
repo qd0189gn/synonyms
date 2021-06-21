@@ -37,8 +37,8 @@
     <div id="demo">
 	<?php  
 	include 'db_configuration.php';
-	//$query = "SELECT * FROM puzzle";
-	$query = "SELECT * FROM puzzle WHERE puzzleWord = '{$_POST['puzzle']}'";
+	$query = "SELECT * FROM puzzle";
+	//$query = "SELECT * FROM puzzle WHERE puzzleWord = '{$_POST['puzzle']}'";
 	$stmt = $db->prepare($query);
 	//$stmt->bind_param('s', $searchterm);  
 	$stmt->execute();
