@@ -1,3 +1,14 @@
+<?php
+
+  $nav_selected = "ADMIN"; 
+  $left_buttons = "YES"; 
+  $left_selected = "LIST SYNONYMS"; 
+
+  include("./nav.php");
+  global $db;
+
+  ?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -14,7 +25,7 @@
 
 	<div class="row">    
 		<?php
-			include 'header.php';
+			//include 'header.php';
 		?>		
 			
     </div>
@@ -26,7 +37,8 @@
     <div id="demo">
 	<?php  
 	include 'db_configuration.php';
-	$query = "SELECT * FROM puzzle";
+	//$query = "SELECT * FROM puzzle";
+	$query = "SELECT * FROM puzzle WHERE puzzleWord = '{$_POST['puzzle']}'";
 	$stmt = $db->prepare($query);
 	//$stmt->bind_param('s', $searchterm);  
 	$stmt->execute();
