@@ -429,6 +429,7 @@ function main_buttons($button_name)
 
 
 
+
 <?php
 
     if(isset($_POST['result'])){
@@ -440,7 +441,14 @@ function main_buttons($button_name)
 
 <form  method="post">
     <button class='main-buttons' input type="submit" name="result" value="HTML"> HTML </button>
+
 </form>
+<button class='main-buttons' onclick="window.location.href='index.php';">Return Home</button>
+
+</div>
+</br>
+</br>
+
 
 <!---button class='main-buttons' onclick="submitSolution()">Submit Solution</button>
     <button class='main-buttons' onclick="showSolution()">Show Solution</button>
