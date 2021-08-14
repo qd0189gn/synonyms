@@ -1,5 +1,3 @@
-package puzzle;
-
 import java.util.*;
 import java.io.*;
 
